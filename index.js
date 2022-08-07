@@ -7,3 +7,7 @@ mongoose.connect('mongodb://localhost:27017/firstDB',{
 })
 .then(()=>{console.log("database connection")})
 .catch((err)=>{console.log(err)})
+
+const blogSchema = new Schema({
+    
+})
