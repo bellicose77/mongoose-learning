@@ -35,3 +35,4 @@ const firstBlog = new Blog({
     active: true,
 
 })
+firstBlog.save();
