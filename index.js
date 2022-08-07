@@ -23,4 +23,6 @@ const blogSchema = new Schema({
     }
 
 
-})
+});
+
+const Blog = mongoose.model('Blog',blogSchema)
