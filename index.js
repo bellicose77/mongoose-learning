@@ -32,11 +32,6 @@ const firstBlog = new Blog({
     ctype : "Learning",
     videos : 40,
     author: "tpr na",
-    active: Boolean,
-    date: {
-        type : Date,
-        default : Date.now
-    }
-
+    active: true,
 
 })
