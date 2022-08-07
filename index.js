@@ -17,6 +17,10 @@ const blogSchema = new Schema({
     videos : Number,
     author: String,
     active: Boolean,
+    date: {
+        type : Date,
+        default : Date.now
+    }
 
 
 })
