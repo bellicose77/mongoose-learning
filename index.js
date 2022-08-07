@@ -25,4 +25,8 @@ const blogSchema = new Schema({
 
 });
 
-const Blog = new mongoose.model('Blog',blogSchema)
+const Blog = new mongoose.model('Blog',blogSchema);
+
+const firstBlog = new Blog({
+    
+})
