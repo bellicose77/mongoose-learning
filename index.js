@@ -10,11 +10,13 @@ mongoose.connect('mongodb://localhost:27017/firstDB',{
 
 const blogSchema = new Schema({
     name:{
-        type:
-        String,
-        required:true
+        type : String,
+        required : true
     },
     ctype : String,
+    videos : Number,
+    author: String,
+    active: Boolean,
 
 
 })
