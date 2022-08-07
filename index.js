@@ -9,5 +9,8 @@ mongoose.connect('mongodb://localhost:27017/firstDB',{
 .catch((err)=>{console.log(err)})
 
 const blogSchema = new Schema({
-    
+    name:{
+        type:string,
+        required:true
+    }
 })
