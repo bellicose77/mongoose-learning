@@ -28,5 +28,15 @@ const blogSchema = new Schema({
 const Blog = new mongoose.model('Blog',blogSchema);
 
 const firstBlog = new Blog({
-    
+    name:"Rudba",
+    ctype : String,
+    videos : Number,
+    author: String,
+    active: Boolean,
+    date: {
+        type : Date,
+        default : Date.now
+    }
+
+
 })
