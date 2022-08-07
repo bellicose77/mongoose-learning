@@ -29,9 +29,9 @@ const Blog = new mongoose.model('Blog',blogSchema);
 
 const firstBlog = new Blog({
     name:"Rudba",
-    ctype : String,
-    videos : Number,
-    author: String,
+    ctype : "Learning",
+    videos : 40,
+    author: "tpr na",
     active: Boolean,
     date: {
         type : Date,
