@@ -41,6 +41,7 @@ const firstBlog = new Blog({
 
 const readDocu = async () =>{
    //const result = await Blog.find({name:'Reacjs'});
+   const result = await Blog.find({name:{$in:['ReactJs','NodeJs']}})
    console.log(result);
 }
 readDocu();
