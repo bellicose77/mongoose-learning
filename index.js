@@ -42,7 +42,8 @@ const Blog = new mongoose.model('Blog',blogSchema);
 
 const readDocu = async () =>{
    //const result = await Blog.find({name:'Reacjs'});
-   const result = await Blog.find({name:{$in:['ReactJs','NodeJs','Expressjs']}})
+//    const result = await Blog.find({name:{$in:['ReactJs','NodeJs','Expressjs']}})
+    const result = await Blog.find({$nor:[{name:"Reacjs"},{video:50}]})
    console.log(result);
 }
 readDocu();
