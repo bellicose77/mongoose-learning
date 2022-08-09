@@ -62,7 +62,7 @@ const fourthBlog = new Blog({
 Blog.insertMany([secondBlog, thirdBlog,fourthBlog ])
 
 const readDocu = () =>{
-
+   const result = await Blog.find();
 }
 readDocu();
 
