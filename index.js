@@ -36,8 +36,8 @@ const firstBlog = new Blog({
 
 });
 const secondBlog = new Blog({
-    name:"Nodejs",
-    ctype : "Learning fast",
+    name:"Reacjs",
+    ctype : "frontend",
     videos : 40,
     author: "tpr na",
     active: true,
