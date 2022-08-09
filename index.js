@@ -28,11 +28,37 @@ const blogSchema = new Schema({
 const Blog = new mongoose.model('Blog',blogSchema);
 
 const firstBlog = new Blog({
-    name:"Rudba",
-    ctype : "Learning",
+    name:"Nodejs",
+    ctype : "Learning fast",
+    videos : 40,
+    author: "tpr na",
+    active: true,
+
+});
+const secondBlog = new Blog({
+    name:"Nodejs",
+    ctype : "Learning fast",
+    videos : 40,
+    author: "tpr na",
+    active: true,
+
+});
+const firstBlog = new Blog({
+    name:"Nodejs",
+    ctype : "Learning fast",
+    videos : 40,
+    author: "tpr na",
+    active: true,
+
+});
+const firstBlog = new Blog({
+    name:"Nodejs",
+    ctype : "Learning fast",
     videos : 40,
     author: "tpr na",
     active: true,
 
 })
-firstBlog.save();
+
+
+
