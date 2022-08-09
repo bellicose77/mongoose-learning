@@ -43,7 +43,7 @@ const secondBlog = new Blog({
     active: true,
 
 });
-const firstBlog = new Blog({
+const thirdBlog = new Blog({
     name:"Nodejs",
     ctype : "Learning fast",
     videos : 40,
@@ -51,7 +51,7 @@ const firstBlog = new Blog({
     active: true,
 
 });
-const firstBlog = new Blog({
+const fourthBlog = new Blog({
     name:"Nodejs",
     ctype : "Learning fast",
     videos : 40,
