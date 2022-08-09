@@ -27,21 +27,22 @@ const blogSchema = new Schema({
 
 const Blog = new mongoose.model('Blog',blogSchema);
 
-const firstBlog = new Blog({
-    name:"Nodejs",
-    ctype : "Learning fast",
-    videos : 40,
-    author: "tpr na",
-    active: true,
+// const firstBlog = new Blog({
+//     name:"Nodejs",
+//     ctype : "Learning fast",
+//     videos : 40,
+//     author: "tpr na",
+//     active: true,
 
-});
+// });
+
 
 
 //Blog.insertMany([secondBlog, thirdBlog,fourthBlog ])
 
 const readDocu = async () =>{
    //const result = await Blog.find({name:'Reacjs'});
-   const result = await Blog.find({name:{$in:['ReactJs','NodeJs']}})
+   const result = await Blog.find({name:{$in:['ReactJs','NodeJs','Expressjs']}})
    console.log(result);
 }
 readDocu();
