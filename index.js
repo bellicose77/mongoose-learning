@@ -44,7 +44,7 @@ const secondBlog = new Blog({
 
 });
 const thirdBlog = new Blog({
-    name:"Nodejs",
+    name:"Expressjs",
     ctype : "Learning fast",
     videos : 40,
     author: "tpr na",
