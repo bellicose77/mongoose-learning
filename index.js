@@ -40,7 +40,7 @@ const firstBlog = new Blog({
 //Blog.insertMany([secondBlog, thirdBlog,fourthBlog ])
 
 const readDocu = async () =>{
-   const result = await Blog.find({name:'Reacjs'});
+   //const result = await Blog.find({name:'Reacjs'});
    console.log(result);
 }
 readDocu();
