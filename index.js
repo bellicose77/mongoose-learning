@@ -58,7 +58,8 @@ const fourthBlog = new Blog({
     author: "tpr na",
     active: true,
 
-})
+});
+Blog.insertMany([secondBlog, thirdBlog,fourthBlog ])
 
 
 
