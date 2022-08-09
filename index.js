@@ -52,8 +52,8 @@ const thirdBlog = new Blog({
 
 });
 const fourthBlog = new Blog({
-    name:"Nodejs",
-    ctype : "Learning fast",
+    name:"Baljs",
+    ctype : "kisu nai er moddeh",
     videos : 40,
     author: "tpr na",
     active: true,
