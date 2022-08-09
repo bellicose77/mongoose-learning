@@ -35,34 +35,13 @@ const firstBlog = new Blog({
     active: true,
 
 });
-const secondBlog = new Blog({
-    name:"Reacjs",
-    ctype : "frontend",
-    videos : 40,
-    author: "tpr na",
-    active: true,
 
-});
-const thirdBlog = new Blog({
-    name:"Expressjs",
-    ctype : "Learning fast",
-    videos : 40,
-    author: "tpr na",
-    active: true,
 
-});
-const fourthBlog = new Blog({
-    name:"Baljs",
-    ctype : "kisu nai er moddeh",
-    videos : 40,
-    author: "tpr na",
-    active: true,
+//Blog.insertMany([secondBlog, thirdBlog,fourthBlog ])
 
-});
-Blog.insertMany([secondBlog, thirdBlog,fourthBlog ])
-
-const readDocu = () =>{
-   const result = await Blog.find();
+const readDocu = async () =>{
+   const result = await Blog.find({name:'Reacjs'});
+   console.log(result);
 }
 readDocu();
 
