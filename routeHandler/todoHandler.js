@@ -20,10 +20,15 @@ router.get('/:id', async(req,res)=>{
 //post a single todo 
 router.post('/',async(req,res)=>{
     const newtodo = new Todo(req.body);
-    await newtodo.save(err=>{
+    await newtodo.save((err)=>{
         if(err){
             res.status(500).json({
                 error: "ther is a server side error"
+            })
+        }
+        else{
+            res.status(200).json({
+                message: "Data added successfully"
             })
         }
     })
