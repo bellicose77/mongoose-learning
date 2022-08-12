@@ -23,6 +23,12 @@ router.post('/all',async(req,res)=>{
 });
 
 // update a todo
-router.put('/',async(req,res)=>{
+router.put('/:id',async(req,res)=>{
 
+});
+
+// delete a todo
+
+router.delete('/:id', async(req,res)=>{
+    
 })
