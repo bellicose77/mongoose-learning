@@ -18,4 +18,5 @@ const todoSchema = new Schema({
         default: Date.now
     }
 
-})
+});
+module.exports = todoSchema;
