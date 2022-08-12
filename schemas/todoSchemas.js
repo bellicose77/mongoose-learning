@@ -12,6 +12,10 @@ const todoSchema = new Schema({
     status:{
         type: String,
         enum:['active','inactive']
+    },
+    date:{
+        type: Date,
+        default: Date.now
     }
 
 })
