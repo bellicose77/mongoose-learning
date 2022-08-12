@@ -13,6 +13,8 @@ mongoose.connect('mongodb://localhost:27017/TODO',{
 .then(()=>{console.log("database connection")})
 .catch((err)=>{console.log(err)})
 
+app.use('/todo',todoHandler);
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
   })
