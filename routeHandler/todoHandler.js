@@ -10,5 +10,10 @@ router.get('/',async(req,res)=>{
 
 // Get single todos
 router.get('/:id', async(req,res)=>{
+
+});
+
+//post a single todo 
+router.post('/',async(req,res)=>{
     
 })
