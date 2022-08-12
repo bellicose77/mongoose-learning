@@ -19,6 +19,8 @@ router.get('/:id', async(req,res)=>{
 
 //post a single todo 
 router.post('/',async(req,res)=>{
+    const newtodo = new Todo(req.body);
+    await newtodo.save()
 
 });
 //post multiple todo
