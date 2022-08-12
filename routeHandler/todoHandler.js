@@ -4,6 +4,8 @@ const todoSchema = require('../schemas/todoSchemas')
 
 const router = express.Router();
 
+const Todo = new mongoose.model('todo',todoSchema)
+
 // Get all todos
 
 router.get('/',async(req,res)=>{
