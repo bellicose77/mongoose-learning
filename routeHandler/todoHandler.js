@@ -59,6 +59,17 @@ router.put('/:id',async(req,res)=>{
         $set:{
           status:"inactive"
         }
+    },(err)=>{
+        if(err){
+            res.status(500).json({
+                error: "ther is a server side error"
+            })
+           }
+           else{
+            res.status(200).json({
+                message: "Data added successfully"
+            })
+           }
     })
 });
 
