@@ -39,8 +39,15 @@ router.post('/',async(req,res)=>{
 router.post('/all',async(req,res)=>{
     await Todo.insertMany(req.body,(err)=>{
         if(err){
-       
-    }
+            res.status(500).json({
+                error: "ther is a server side error"
+            })
+           }
+           else{
+            res.status(200).json({
+                message: "Data added successfully"
+            })
+           }
 
     })
 
