@@ -55,7 +55,7 @@ router.post('/all',async(req,res)=>{
 
 // update a todo
 router.put('/:id',async(req,res)=>{
-
+    await Todo.updateOne()
 });
 
 // delete a todo
