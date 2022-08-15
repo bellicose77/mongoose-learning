@@ -55,7 +55,11 @@ router.post('/all',async(req,res)=>{
 
 // update a todo
 router.put('/:id',async(req,res)=>{
-    await Todo.updateOne()
+    await Todo.updateOne({_id:req.params.id},{
+        $set:{
+          status:"inactive"
+        }
+    })
 });
 
 // delete a todo
