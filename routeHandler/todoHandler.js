@@ -26,7 +26,7 @@ router.get('/',async(req,res)=>{
 
 // Get single todos
 router.get('/:id', async(req,res)=>{
-    await Todo.find({_id:req.params.id},(err,data)=>{
+    await Todo.find({_id: req.params.id},(err,data)=>{
         if(err){
             res.status(500).json({
                 error: "ther is a server side error"
@@ -102,7 +102,20 @@ router.put('/:id',async(req,res)=>{
 // delete a todo
 
 router.delete('/:id', async(req,res)=>{
+    await Todo.deleteOne({_id: req.params.id},(err)=>{
+        if(err){
+            res.status(500).json({
+                error: "ther is a server side error"
+            })
+         }
+         else{
+            res.status(200).json({
+              
+                message: "Data deleted successfully"
+            })
+        }
 
+    }).clone()
 });
 
 module.exports = router;
