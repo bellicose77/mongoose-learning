@@ -38,6 +38,9 @@ router.post('/',async(req,res)=>{
 //post multiple todo
 router.post('/all',async(req,res)=>{
     await Todo.insertMany(req.body,(err)=>{
+        if(err){
+       
+    }
 
     })
 
