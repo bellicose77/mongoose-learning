@@ -9,7 +9,7 @@ const Todo = new mongoose.model('todo',todoSchema)
 // Get all todos
 
 router.get('/',async(req,res)=>{
-   await Todo.find({},(err,data)=>{
+   await Todo.find({status:'active'},(err,data)=>{
      if(err){
         res.status(500).json({
             error: "ther is a server side error"
@@ -21,7 +21,7 @@ router.get('/',async(req,res)=>{
             message: "Data added successfully"
         })
      }
-   })
+   }).clone()
 });
 
 // Get single todos
