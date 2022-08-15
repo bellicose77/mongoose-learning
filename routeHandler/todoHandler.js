@@ -20,6 +20,7 @@ router.get('/:id', async(req,res)=>{
 //post a single todo 
 router.post('/',async(req,res)=>{
     const newtodo = new Todo(req.body);
+    console.log(newtodo);
     await newtodo.save((err)=>{
         if(err){
             res.status(500).json({
@@ -36,6 +37,7 @@ router.post('/',async(req,res)=>{
 });
 //post multiple todo
 router.post('/all',async(req,res)=>{
+    await Todo.insertMany()
 
 });
 
