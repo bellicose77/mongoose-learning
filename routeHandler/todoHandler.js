@@ -9,7 +9,9 @@ const Todo = new mongoose.model('todo',todoSchema)
 // Get all todos
 
 router.get('/',async(req,res)=>{
-
+   await Todo.find({},{
+    
+   })
 });
 
 // Get single todos
